@@ -10,56 +10,52 @@ header {
     height: 60px;
     line-height: 60px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
-    z-index: 5;
-    position: relative;
     img {
         height: 26px;
     }
 }
 
-#mainNav {
-    padding-top: 20px;
-    background-color: #f7f7f7;
-    height: 100vh;
-    ul {
-        list-style: none;
-        padding-left: 0;
-        a {
-            padding: 8px 8px 8px 0;
-            text-decoration: none;
-            font-size: 25px;
-            color: $purple;
-            display: block;
-            transition: 0.3s;
-        }
-        a:hover {
-            color: $black;
-        }
+.content {
+    padding: 20px;
+    button {
+        display: block;
+        border: none;
+        background-color: $purple;
+        height: 30px;
+        width: 150px;
+        border-radius: 5px;
+        color: white;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     }
 }
 
-#details {
-    #thumbnail {
-        float: left;
-        padding: 20px;
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.95);
+    text-align: center;
+    overflow: auto;
+    color: white;
+    a {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
     }
-    #media-details {
-        margin-top: 20px;
-        p {
-            margin-top: 10px;
+    #audio-container {
+        width: 100%;
+        img {
+            margin-top: 100px;
         }
-        button {
-            display: block;
-            border: none;
-            background-color: $purple;
-            height: 50px;
-            width: 150px;
-            border-radius: 13px;
-            color: white;
-            font-weight: 500;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        audio {
+            margin-top: 20px;
+            margin-bottom: 20px;
         }
     }
 }
